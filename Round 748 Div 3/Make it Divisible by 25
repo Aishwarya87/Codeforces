@@ -1,0 +1,6 @@
+Make the table of 25 to see a pattern
+
+1) the last digit should by 0 or 5 to make it divisible. If not then start removing that digit.
+2) Number behind 5 should either be 2 or 7.
+3) Number behing 0 should either be 5 or 0.
+
