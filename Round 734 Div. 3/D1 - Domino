@@ -1,0 +1,29 @@
+Given n*m is even:
+1) n is even and m is even:
+  n=6; m=6; if k value is odd then print False, because horizontal domino value will increase to fit in all the dominos.
+  
+2) n is odd and m is even
+3) n is even and m is odd
+
+
+NUM = int(input())
+for _ in range(0,NUM):
+	n , m , k = map(int , input().split())
+	if n%2==0 and m%2==0:
+		if k%2==0:
+			print("YES")
+		else:
+			print("NO")
+	elif n%2!=0 and m%2==0:
+		if k<m//2:
+			print("NO")
+		else:
+			k=k-m//2
+			if k%2==0: print("YES")
+			else: print("NO")
+	else:
+		if k<=n*m//2-n//2 and k%2==0:
+			print("YES")
+		else:
+			print("NO")
+
