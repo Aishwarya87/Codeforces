@@ -1,0 +1,15 @@
+n,m = map(int,input().split())
+ 
+minMex = float("inf")
+ 
+for i in range(m):
+	l,r= map(int,input().split())
+	minMex=min(minMex,r-l+1)
+print(minMex)
+a=0
+for i in range(n):
+	print(a,end=" ")
+	a+=1
+	if a==minMex: a=0
+  
+  
